@@ -1,0 +1,2 @@
+# Sci_CharacterRange-
+It doesn't seem to work. This is how I tried it:  $ret = dllcall ("user32.dll", "int" , "sendMessageA", "hwnd", $Sci , "int" , $Sci_FindText, "int", $ScFind_RegExp, "str", "[a_z]*") In the help file it is said that it has to be a structure:  struct Sci_TextToFind {      struct Sci_CharacterRange chrg; // range to search      char *lpstrText; // the search pattern (zero terminated)      struct Sci_CharacterRange chrgText; // returned as position of matching text };
